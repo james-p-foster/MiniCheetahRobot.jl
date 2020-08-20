@@ -1,5 +1,5 @@
 module MiniCheetahRobot
 
-# Write your package code here.
+using RigidBodyDynamics
 
 end

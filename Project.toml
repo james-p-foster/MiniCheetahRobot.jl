@@ -3,6 +3,9 @@ uuid = "beeee982-5607-4501-bd6a-819528c81031"
 authors = ["James Foster"]
 version = "0.1.0"
 
+[deps]
+RigidBodyDynamics = "366cf18f-59d5-5db9-a4de-86a9f6786172"
+
 [compat]
 julia = "1"
 
