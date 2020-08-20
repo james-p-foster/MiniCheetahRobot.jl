@@ -1,4 +1,8 @@
 *.jl.*.cov
 *.jl.cov
 *.jl.mem
+deps/cheetah_description
+deps/build.log
 Manifest.toml
+
+.DS_Store
