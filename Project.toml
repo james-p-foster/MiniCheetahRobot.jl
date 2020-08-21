@@ -8,6 +8,7 @@ RigidBodyDynamics = "366cf18f-59d5-5db9-a4de-86a9f6786172"
 
 [compat]
 julia = "1"
+RigidBodyDynamics = "2"
 
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
