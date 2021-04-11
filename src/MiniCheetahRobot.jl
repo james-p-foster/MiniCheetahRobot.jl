@@ -26,14 +26,6 @@ function mechanism(::Type{T} = Float64;
 
             # bottom of foot -- in foot frame, positive x
             add_contact_point!(foot, ContactPoint(Point3D(frame, radius, 0, 0), contactmodel))
-            # front of foot -- in foot frame, negative y
-            add_contact_point!(foot, ContactPoint(Point3D(frame, 0, -radius, 0), contactmodel))
-            # back of foot -- in foot frame, positive y
-            add_contact_point!(foot, ContactPoint(Point3D(frame, 0,  radius, 0), contactmodel))
-            # left of foot -- in foot frame, positive z
-            add_contact_point!(foot, ContactPoint(Point3D(frame, 0, 0,  radius), contactmodel))
-            # right of foot -- in foot frame, negative z
-            add_contact_point!(foot, ContactPoint(Point3D(frame, 0, 0, -radius), contactmodel))
         end
     end
 
@@ -52,7 +44,7 @@ function setnominal!(cheetah_state::MechanismState)
     mechanism = cheetah_state.mechanism
     zero!(cheetah_state)
 
-    # Give the legs there natural bend
+    # Give the legs their natural bend
     hip_pitch = -0.8
     knee_pitch = -1.5
     for leg in (:FR, :FL, :RR, :RL)
